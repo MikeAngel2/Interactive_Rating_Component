@@ -1,0 +1,65 @@
+.rate-button{
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 22.5px 20px 0;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 15px;
+  border: none;
+  background-color: $medium-grey-color;
+  transition: 0.2s;
+  @media screen and (max-width: $mobile){
+    width: 32px;
+    height: 32px;
+  }
+
+  &:hover{
+
+     background-color: $primary-color;
+     color: $light-color;
+     transition: 0.2s;
+     opacity: 1;
+   }
+
+  &:focus{
+    background-color: $light-grey-color;
+    color: $light-color;
+    opacity: 1;
+  }
+}
+
+.Submit-btn{
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  padding: 10px 10px;
+  background-color: $primary-color;
+  color: $light-color;
+  border: none;
+  transition: 0.2s;
+
+  &:hover{
+    background-color: $light-color;
+    color: $primary-color;
+    transition: 0.2s;
+  }
+}
+
+  .star-button{
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 22.5px 20px 0;
+    text-align: center;
+    padding: 2%;
+    opacity: 0.5;
+    font-size: 15px;
+    border: none;
+    background-color: $medium-grey-color;
+  }

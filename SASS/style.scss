@@ -1,0 +1,99 @@
+//Add variables created in Config
+@import 'config';
+@import 'button';
+
+body {
+  p {
+    color: $medium-grey-color;
+    padding: 0 0 30px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  h1 {
+    color: $light-color;
+    font-weight: 700;
+  }
+
+  h2 {
+    @extend h1;
+  }
+
+  i {
+    color: $primary-color;
+    //padding: 20px 0 30px 15px;
+  }
+
+  & {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-color;
+    font-family: 'Overpass', sans-serif;
+  }
+}
+
+.Rating {
+  @media screen and (max-width: $desktop) {
+    width: 350px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 310px;
+  }
+
+  .Stars {
+    align-items: center;
+  }
+
+  & {
+    margin: 40% auto auto;
+    background-color: $card-color;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    padding: 20px;
+    height: 100%;
+  }
+}
+//Will inherit properties from Rating class
+.Thanks {
+  img {
+    width: 170px;
+    height: 110px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .rate2 {
+    .Rate {
+      text-align: center;
+      color: $primary-color;
+    }
+
+    & {
+      width: 55%;
+      height: 40px;
+      background-color: $dark-color;
+      border-radius: 30px;
+    }
+  }
+
+  & {
+    @extend .Rating;
+    align-content: center;
+    display: none;
+  }
+}
+
+.attribution {
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  & {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 30px;
+    color: $light-color;
+  }
+}
