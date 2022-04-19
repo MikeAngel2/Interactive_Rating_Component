@@ -8,5 +8,5 @@ $(".rate-button").click(function(){
 //When submit button is clicked, hides the first card and shows the second one
 $(".Submit").click(function(){
   $(".Rating").css('display', 'none');
-  $(".Thanks").css('display','block');
+  $(".Thanks").css('display','flex');
 });

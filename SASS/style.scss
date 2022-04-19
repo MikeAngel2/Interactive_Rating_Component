@@ -67,7 +67,10 @@ body {
   .rate2 {
     .Rate {
       text-align: center;
+      display: flex;
       color: $primary-color;
+      align-items: center;
+      text-align: center;
     }
 
     & {
@@ -82,6 +85,8 @@ body {
     @extend .Rating;
     align-content: center;
     display: none;
+    align-items: center;
+    text-align: center;
   }
 }
 
